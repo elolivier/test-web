@@ -1,0 +1,217 @@
+[
+  {
+    "id": 1,
+    "topic": "CSS",
+    "difficulty": "Básico",
+    "question": "¿Qué propiedad cambia el color del texto?",
+    "options": ["background", "color", "fill", "stroke"],
+    "answer": 1,
+    "explanation": "color controla el color del texto."
+  },
+  {
+    "id": 2,
+    "topic": "CSS",
+    "difficulty": "Básico",
+    "question": "¿Qué selector aplica a todos los párrafos?",
+    "options": ["#p", ".p", "p", "*p"],
+    "answer": 2,
+    "explanation": "El selector de tipo p coincide con todos los <p>."
+  },
+  {
+    "id": 3,
+    "topic": "CSS",
+    "difficulty": "Básico",
+    "question": "¿Cómo centrar horizontalmente con Flexbox?",
+    "options": ["align-items:center", "justify-content:center", "text-align:center", "place-items:center"],
+    "answer": 1,
+    "explanation": "justify-content centra en el eje principal."
+  },
+  {
+    "id": 4,
+    "topic": "CSS",
+    "difficulty": "Básico",
+    "question": "¿Qué describe el modelo de caja estándar?",
+    "options": ["content + border", "content + padding + border + margin", "padding + border + margin", "content + margin + outline"],
+    "answer": 1,
+    "explanation": "Incluye contenido, padding, borde y margen."
+  },
+  {
+    "id": 5,
+    "topic": "CSS",
+    "difficulty": "Básico",
+    "question": "¿Qué propiedad controla el espacio interno?",
+    "options": ["margin", "padding", "gap", "inset"],
+    "answer": 1,
+    "explanation": "padding es espacio interno; margin es externo."
+  },
+  {
+    "id": 6,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué selector es más específico?",
+    "options": ["p", ".box", "#main", "*"],
+    "answer": 2,
+    "explanation": "id > clase > tipo > universal."
+  },
+  {
+    "id": 7,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Cómo crear tres columnas iguales en CSS Grid?",
+    "options": [
+      "grid-template-columns: 3fr;",
+      "grid-template-columns: repeat(3, 1fr);",
+      "grid-columns: 3;",
+      "grid-template: 1fr 1fr 1fr;"
+    ],
+    "answer": 1,
+    "explanation": "repeat(3, 1fr) crea tres columnas iguales."
+  },
+  {
+    "id": 8,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué hace box-sizing: border-box?",
+    "options": [
+      "Incluye padding/border dentro del width/height",
+      "Excluye margin del layout",
+      "Hace el elemento inline",
+      "Quita el borde"
+    ],
+    "answer": 0,
+    "explanation": "Facilita dimensionado predecible."
+  },
+  {
+    "id": 9,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué unidad se escala con la fuente del elemento raíz?",
+    "options": ["em", "rem", "vw", "px"],
+    "answer": 1,
+    "explanation": "rem depende del font-size de html."
+  },
+  {
+    "id": 10,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué propiedad define el stacking context con valores distintos a 'auto'?",
+    "options": ["position", "z-index", "opacity", "display"],
+    "answer": 2,
+    "explanation": "opacity < 1 crea un nuevo stacking context; también transform, filter, etc."
+  },
+  {
+    "id": 11,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Cómo definir un grid con filas automáticas de altura mínima 150px?",
+    "options": [
+      "grid-auto-rows: 150px",
+      "grid-auto-rows: minmax(150px, auto)",
+      "grid-template-rows: 150px",
+      "row-height: minmax(150px, auto)"
+    ],
+    "answer": 1,
+    "explanation": "minmax(150px, auto) define la altura mínima y expansible."
+  },
+  {
+    "id": 12,
+    "topic": "CSS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué es la cascada en CSS?",
+    "options": [
+      "El algoritmo que resuelve conflictos según origen, importancia, especificidad y orden",
+      "Una librería para estilos",
+      "Un método de compilar CSS",
+      "Un prefijo de navegador"
+    ],
+    "answer": 0,
+    "explanation": "La cascada decide qué regla gana."
+  },
+  {
+    "id": 13,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Cuál es la mejor práctica para dark mode preferente?",
+    "options": [
+      "Detectar con JS el tema",
+      "Usar @media (prefers-color-scheme: dark)",
+      "Cambiar el DOM al cargar",
+      "Forzar colores con !important"
+    ],
+    "answer": 1,
+    "explanation": "Respeta la preferencia del usuario con media query."
+  },
+  {
+    "id": 14,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué valor de display activa el formatting context de bloque y centra con margin:auto en horizontal?",
+    "options": ["inline", "inline-block", "block", "contents"],
+    "answer": 2,
+    "explanation": "Los elementos block respetan margin:auto horizontal."
+  },
+  {
+    "id": 15,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Cuál es la opción más robusta para centrar vertical y horizontalmente a pantalla completa?",
+    "options": [
+      "position:absolute + transform",
+      "table-cell + vertical-align",
+      "Flexbox en contenedor 100vh",
+      "margin:auto en cuatro lados"
+    ],
+    "answer": 2,
+    "explanation": "Flexbox con min-height:100vh y centrar."
+  },
+  {
+    "id": 16,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué propiedad activa un nuevo contexto de formateo que contiene floats?",
+    "options": ["overflow:auto/hidden", "z-index:1", "position:relative", "isolation:isolate"],
+    "answer": 0,
+    "explanation": "overflow distinto de visible crea BFC que contiene floats."
+  },
+  {
+    "id": 17,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Para layouts fluidos, qué unidad es más adecuada para ancho de columnas responsivas?",
+    "options": ["px", "em", "fr", "pt"],
+    "answer": 2,
+    "explanation": "fr reparte el espacio disponible en Grid."
+  },
+  {
+    "id": 18,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué pseudo-clase ayuda a mejorar accesibilidad de focus sólo por teclado?",
+    "options": [":focus", ":focus-visible", ":active", ":target"],
+    "answer": 1,
+    "explanation": ":focus-visible evita anillos cuando haces clic con ratón, mostrándolos al navegar con teclado."
+  },
+  {
+    "id": 19,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué propiedad evita que un elemento flex se encoja por debajo de su contenido mínimo?",
+    "options": ["flex-basis: auto", "flex-grow: 0", "flex-shrink: 0", "min-width: 0"],
+    "answer": 2,
+    "explanation": "flex-shrink:0 impide que el elemento se encoja."
+  },
+  {
+    "id": 20,
+    "topic": "CSS",
+    "difficulty": "Avanzado",
+    "question": "¿Cuál es la forma de crear una cuadrícula responsive con columnas automáticas mínimas de 220px?",
+    "options": [
+      "grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));",
+      "grid-template-columns: repeat(220px, auto-fit);",
+      "grid-auto-columns: minmax(220px, 1fr);",
+      "grid-template: auto-fit / 220px"
+    ],
+    "answer": 0,
+    "explanation": "El patrón repeat(auto-fit, minmax(220px,1fr)) es el más común."
+  }
+]

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test de nivelación: HTML, CSS y JavaScript</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app" role="application" aria-label="Test de nivelación HTML CSS y JavaScript">
+    <header>
+      <h1 class="title">Test de nivelación: HTML, CSS y JavaScript</h1>
+
+      <div class="start-row">
+        <label for="blockSelect" class="sr-only">Elegir bloque</label>
+        <select id="blockSelect" aria-label="Elegir bloque de preguntas">
+          <option value="html">HTML (20 preguntas)</option>
+          <option value="css">CSS (20 preguntas)</option>
+          <option value="js">JavaScript (20 preguntas)</option>
+        </select>
+        <button id="loadBtn" class="primary">Cargar bloque</button>
+      </div>
+
+      <span class="badge" id="progressText">—</span>
+    </header>
+
+    <div class="progress" aria-hidden="true"><div class="bar" id="bar"></div></div>
+
+    <main>
+      <div class="q-head">
+        <div class="q-num" id="qNum">—</div>
+        <div style="flex:1">
+          <p class="q-text" id="qText">elige un bloque y pulsa “cargar bloque”.</p>
+          <div class="meta">
+            <span id="qTopic" class="pill">—</span>
+            <span id="qDiff" class="pill">—</span>
+          </div>
+        </div>
+      </div>
+
+      <pre class="code hidden" id="qCode" aria-live="polite"><code id="qCodeInner"></code></pre>
+
+      <form id="options" class="options" aria-labelledby="qText"></form>
+
+      <nav class="nav">
+        <div class="left">
+          <button type="button" id="prevBtn" class="ghost" aria-label="Pregunta anterior" disabled><span>←</span> Anterior</button>
+        </div>
+        <div class="right">
+          <span class="pill" id="answeredCount">0/0 respondidas</span>
+          <button type="button" id="nextBtn" disabled>Siguiente <span>→</span></button>
+          <button type="button" id="finishBtn" class="primary" disabled>Finalizar y enviar</button>
+        </div>
+      </nav>
+      <div class="footer-note">consejo: usa <kbd>←</kbd> y <kbd>→</kbd> para navegar, y <kbd>enter</kbd> para avanzar si hay respuesta.</div>
+    </main>
+
+    <section class="results" id="results" aria-live="polite" aria-atomic="true">
+      <h2 id="levelTitle">Tu nivel</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="score-big" id="scoreText">—/20</div>
+          <div id="percentText" class="muted"></div>
+        </div>
+        <div class="card">
+          <div><strong>Tiempo</strong></div>
+          <div id="timeText">—</div>
+        </div>
+        <div class="card">
+          <div><strong>Por tema</strong></div>
+          <div id="byTopic">—</div>
+        </div>
+      </div>
+      <details id="solutions">
+        <summary>Ver soluciones y explicaciones</summary>
+        <div id="solutionsBody"></div>
+      </details>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+[
+  {
+    "id": 1,
+    "topic": "HTML",
+    "difficulty": "Básico",
+    "question": "¿Qué etiqueta define un párrafo?",
+    "options": ["<div>", "<p>", "<span>", "<section>"],
+    "answer": 1,
+    "explanation": "Los párrafos se marcan con <p>."
+  },
+  {
+    "id": 2,
+    "topic": "HTML",
+    "difficulty": "Básico",
+    "question": "¿Qué atributo de <img> mejora la accesibilidad describiendo la imagen?",
+    "options": ["title", "alt", "aria-role", "desc"],
+    "answer": 1,
+    "explanation": "alt proporciona texto alternativo."
+  },
+  {
+    "id": 3,
+    "topic": "HTML",
+    "difficulty": "Básico",
+    "question": "¿Cuál es la declaración correcta de tipo de documento para HTML5?",
+    "options": ["<!DOCTYPE html>", "<!DOCTYPE HTML5>", "<!doctype>", "<!DOCTYPE XHTML>"],
+    "answer": 0,
+    "explanation": "HTML5 utiliza la forma corta <!DOCTYPE html>."
+  },
+  {
+    "id": 4,
+    "topic": "HTML",
+    "difficulty": "Básico",
+    "question": "¿Qué elemento es semántico?",
+    "options": ["<div>", "<b>", "<section>", "<span>"],
+    "answer": 2,
+    "explanation": "<section> aporta significado; <div> y <span> son genéricos."
+  },
+  {
+    "id": 5,
+    "topic": "HTML",
+    "difficulty": "Básico",
+    "question": "¿Qué etiqueta usas para vínculos?",
+    "options": ["<a>", "<link>", "<nav>", "<button>"],
+    "answer": 0,
+    "explanation": "<a href=\"...\"> crea hipervínculos."
+  },
+  {
+    "id": 6,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Qué atributo asocia un <label> con un <input>?",
+    "options": ["name", "id", "for", "aria-labelledby"],
+    "answer": 2,
+    "explanation": "for debe coincidir con el id del input."
+  },
+  {
+    "id": 7,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Qué meta-etiqueta habilita diseño responsive?",
+    "options": [
+      "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">",
+      "<meta name=\"device\" content=\"responsive\">",
+      "<meta name=\"scale\" content=\"1\">",
+      "<meta name=\"viewport\" content=\"initial-width=1\">"
+    ],
+    "answer": 0,
+    "explanation": "La meta de viewport es el patrón común."
+  },
+  {
+    "id": 8,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Qué elemento agrupa navegación principal?",
+    "options": ["<nav>", "<menu>", "<aside>", "<header>"],
+    "answer": 0,
+    "explanation": "<nav> agrupa enlaces de navegación."
+  },
+  {
+    "id": 9,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Qué atributo de <script> evita bloquear el parseo del HTML y mantiene el orden?",
+    "options": ["async", "defer", "type", "nomodule"],
+    "answer": 1,
+    "explanation": "defer descarga en paralelo y ejecuta tras el parseo, respetando el orden."
+  },
+  {
+    "id": 10,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Qué rol tiene <main>?",
+    "options": [
+      "Contenido repetido (cabecera/pie)",
+      "Contenido principal único del documento",
+      "Contenedor genérico",
+      "Sección de navegación"
+    ],
+    "answer": 1,
+    "explanation": "<main> encierra el contenido principal único."
+  },
+  {
+    "id": 11,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Cuál es la forma correcta de incrustar vídeo accesible?",
+    "options": [
+      "<video src=\"movie.mp4\">",
+      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"></video>",
+      "<embed src=\"movie.mp4\">",
+      "<object data=\"movie.mp4\">"
+    ],
+    "answer": 1,
+    "explanation": "Usa <video controls> y <source> con type."
+  },
+  {
+    "id": 12,
+    "topic": "HTML",
+    "difficulty": "Intermedio",
+    "question": "¿Qué atributo de <form> define la URL de envío?",
+    "options": ["method", "enctype", "action", "target"],
+    "answer": 2,
+    "explanation": "action indica el endpoint del formulario."
+  },
+  {
+    "id": 13,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "Selecciona la mejor práctica para tablas de datos accesibles.",
+    "options": [
+      "Usar <div> con CSS para simular tabla",
+      "Usar <table> con <th> y scope adecuado",
+      "Ocultar los encabezados con display:none",
+      "Usar solo <td>"
+    ],
+    "answer": 1,
+    "explanation": "<th> y scope permiten a lectores de pantalla asociar celdas."
+  },
+  {
+    "id": 14,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "¿Qué atributo de <a> se recomienda por seguridad para enlaces externos con target=\"_blank\"?",
+    "options": [
+      "rel=\"nofollow\"",
+      "rel=\"noopener\" o \"noopener noreferrer\"",
+      "download",
+      "referrerpolicy=\"no-referrer-when-downgrade\""
+    ],
+    "answer": 1,
+    "explanation": "noopener evita acceso al window.opener (tabnabbing)."
+  },
+  {
+    "id": 15,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "¿Qué elemento semántico representa contenido independiente y autocontenido?",
+    "options": ["<section>", "<article>", "<div>", "<figure>"],
+    "answer": 1,
+    "explanation": "<article> es autocontenido y reutilizable."
+  },
+  {
+    "id": 16,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "¿Qué atributo es correcto para desactivar autocompletado de un campo concreto?",
+    "options": [
+      "autocomplete=\"none\"",
+      "autocomplete=\"off\"",
+      "autocomplete=\"false\"",
+      "noautocomplete"
+    ],
+    "answer": 1,
+    "explanation": "En inputs, autocomplete=\"off\" sugiere desactivar autocompletado."
+  },
+  {
+    "id": 17,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "¿Cuál es la diferencia correcta entre <strong> y <b>?",
+    "options": [
+      "<strong> es semántico (énfasis fuerte); <b> es presentacional",
+      "Ambos son idénticos",
+      "<b> es semántico; <strong> no",
+      "Ninguno es accesible"
+    ],
+    "answer": 0,
+    "explanation": "<strong> comunica importancia semántica."
+  },
+  {
+    "id": 18,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "¿Cómo se asocia una descripción larga accesible a una imagen compleja (gráfico)?",
+    "options": [
+      "title en la imagen",
+      "aria-label en la imagen",
+      "aria-describedby apuntando al id de una descripción cercana",
+      "alt con todo el texto largo"
+    ],
+    "answer": 2,
+    "explanation": "aria-describedby permite enlazar una descripción extensa sin saturar alt."
+  },
+  {
+    "id": 19,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "¿Cuál es la diferencia correcta entre GET y POST en formularios?",
+    "options": [
+      "GET envía datos en el cuerpo; POST en la URL",
+      "GET es idempotente y envía en la URL; POST no es idempotente y envía en el cuerpo",
+      "Ambos son siempre idempotentes",
+      "POST se cachea por defecto y GET no"
+    ],
+    "answer": 1,
+    "explanation": "GET envía parámetros en la URL y debe ser idempotente."
+  },
+  {
+    "id": 20,
+    "topic": "HTML",
+    "difficulty": "Avanzado",
+    "question": "Elige la forma correcta de diferir un módulo y mantener buen desempeño.",
+    "options": [
+      "<script type=\"module\" async src=\"app.js\"></script>",
+      "<script type=\"module\" defer src=\"app.js\"></script>",
+      "<script nomodule src=\"app.js\"></script>",
+      "<script src=\"app.js\"></script>"
+    ],
+    "answer": 1,
+    "explanation": "type=\"module\" ya es diferido por defecto, pero defer explicita la intención y mantiene orden."
+  }
+]

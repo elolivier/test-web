@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "topic": "JS",
+    "difficulty": "Básico",
+    "question": "¿Cuál de estos valores es falsy?",
+    "options": ["\"0\"", "[]", "0", "{}"],
+    "answer": 2,
+    "explanation": "0 es falsy; los otros son truthy."
+  },
+  {
+    "id": 2,
+    "topic": "JS",
+    "difficulty": "Básico",
+    "question": "¿Qué devuelve document.querySelector('.item')?",
+    "options": [
+      "Una lista con todos .item",
+      "El primer elemento que coincide",
+      "Un HTMLCollection con .item",
+      "Un NodeList con todos .item"
+    ],
+    "answer": 1,
+    "explanation": "querySelector devuelve el primer match."
+  },
+  {
+    "id": 3,
+    "topic": "JS",
+    "difficulty": "Básico",
+    "question": "¿Qué diferencia principal hay entre var y let en alcance?",
+    "options": [
+      "Ninguna, ambos son de bloque",
+      "var es de función y let es de bloque",
+      "var no puede redefinirse",
+      "let se eleva (hoisting) y var no"
+    ],
+    "answer": 1,
+    "explanation": "var = función; let/const = bloque."
+  },
+  {
+    "id": 4,
+    "topic": "JS",
+    "difficulty": "Básico",
+    "question": "¿Qué método crea un nuevo array sin mutar el original?",
+    "options": ["forEach", "map", "push", "splice"],
+    "answer": 1,
+    "explanation": "map devuelve un nuevo array."
+  },
+  {
+    "id": 5,
+    "topic": "JS",
+    "difficulty": "Básico",
+    "question": "¿Qué operador compara valor y tipo?",
+    "options": ["==", "===", "!=", "<="],
+    "answer": 1,
+    "explanation": "=== es comparación estricta."
+  },
+  {
+    "id": 6,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué hace Promise.all([p1, p2]) si p1 rechaza?",
+    "options": [
+      "Resuelve con el valor de p2",
+      "Rechaza inmediatamente con el motivo de p1",
+      "Espera p2 y luego decide",
+      "Convierte el rechazo en undefined"
+    ],
+    "answer": 1,
+    "explanation": "Promise.all rechaza al primer rechazo."
+  },
+  {
+    "id": 7,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué salida produce el siguiente código?",
+    "code": "console.log(typeof null);",
+    "options": ["\"null\"", "\"object\"", "\"undefined\"", "\"number\""],
+    "answer": 1,
+    "explanation": "Histórico bug de JS: typeof null === \"object\"."
+  },
+  {
+    "id": 8,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué es el event loop?",
+    "options": [
+      "Un hilo adicional para DOM",
+      "El mecanismo que orquesta la ejecución de callbacks y tareas",
+      "Una API del navegador para eventos",
+      "Una librería externa"
+    ],
+    "answer": 1,
+    "explanation": "Coordina call stack, queue y microtasks."
+  },
+  {
+    "id": 9,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué método convierte \"42\" en número de forma segura?",
+    "options": ["parseInt(\"42px\")", "Number(\"42\")", "\"42\" * 1", "parseFloat(\"42.0.1\")"],
+    "answer": 1,
+    "explanation": "Number(\"42\") da 42 sin sorpresas de base o sufijos."
+  },
+  {
+    "id": 10,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué hace Array.from(new Set(arr))?",
+    "options": [
+      "Ordena el array",
+      "Elimina duplicados conservando el orden de aparición",
+      "Invierte el array",
+      "Aplana arrays anidados"
+    ],
+    "answer": 1,
+    "explanation": "Set quita duplicados; Array.from vuelve a array."
+  },
+  {
+    "id": 11,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Qué imprime este código?",
+    "code": "let a = [];\nconsole.log(a == false, a === false);",
+    "options": ["true true", "true false", "false true", "false false"],
+    "answer": 1,
+    "explanation": "== hace coerción ([] -> '' -> 0 -> false), === no."
+  },
+  {
+    "id": 12,
+    "topic": "JS",
+    "difficulty": "Intermedio",
+    "question": "¿Cuál es la forma segura de insertar texto del usuario en el DOM?",
+    "options": [
+      "element.innerHTML = userInput",
+      "element.outerHTML = userInput",
+      "element.textContent = userInput",
+      "eval(userInput)"
+    ],
+    "answer": 2,
+    "explanation": "textContent no interpreta HTML."
+  },
+  {
+    "id": 13,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué imprime este fragmento?",
+    "code": "let x = 1;\n{\n  console.log(x);\n  let x = 2;\n}",
+    "options": ["1", "2", "undefined", "ReferenceError"],
+    "answer": 3,
+    "explanation": "Zona muerta temporal de let."
+  },
+  {
+    "id": 14,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Cuál es la diferencia entre microtareas y macrotareas?",
+    "options": [
+      "Las microtareas (promesas) se ejecutan antes de render y antes de macrotareas",
+      "No hay diferencia",
+      "Las macrotareas se ejecutan antes que las microtareas",
+      "Las microtareas son sólo setTimeout"
+    ],
+    "answer": 0,
+    "explanation": "Microtasks (Promesas) tienen prioridad sobre tareas de la cola (setTimeout)."
+  },
+  {
+    "id": 15,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué hace Object.freeze(obj)?",
+    "options": [
+      "Hace inmutables todas las referencias profundas",
+      "Evita añadir/eliminar/cambiar propiedades a nivel superficial",
+      "Impide leer propiedades",
+      "Convierte el objeto en primitivo"
+    ],
+    "answer": 1,
+    "explanation": "Freeze es superficial; para profundo necesitas utilidades adicionales."
+  },
+  {
+    "id": 16,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué retorna la expresión [] + {} y {} + [] en la consola del navegador?",
+    "options": [
+      "\"[object Object][object Object]\" y \"[object Object]\"",
+      "\"[object Object]\" y \"[object Object]\"",
+      "\"\" y \"\"",
+      "\"[object Object]\" y 0"
+    ],
+    "answer": 1,
+    "explanation": "Concatenación de strings tras coerción a primitivas."
+  },
+  {
+    "id": 17,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "Elige la opción más adecuada para manejar errores en async/await.",
+    "options": [
+      "Ignorarlos",
+      "try/catch alrededor del await",
+      "Usar sólo .catch() en la promesa sin await",
+      "window.onerror"
+    ],
+    "answer": 1,
+    "explanation": "try/catch captura rechazos de await de forma legible."
+  },
+  {
+    "id": 18,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué hace la desestructuración con valor por defecto?",
+    "code": "const {a = 10} = {}; console.log(a);",
+    "options": ["undefined", "null", "10", "Error"],
+    "answer": 2,
+    "explanation": "Si no existe la propiedad, usa el valor por defecto."
+  },
+  {
+    "id": 19,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué diferencia hay entre map y forEach?",
+    "options": [
+      "forEach devuelve nuevo array; map no",
+      "map devuelve nuevo array transformado; forEach no devuelve",
+      "Ninguna",
+      "forEach es más rápido siempre"
+    ],
+    "answer": 1,
+    "explanation": "map transforma y retorna nuevo array; forEach no."
+  },
+  {
+    "id": 20,
+    "topic": "JS",
+    "difficulty": "Avanzado",
+    "question": "¿Qué imprime este código?",
+    "code": "console.log(0.1 + 0.2 === 0.3);",
+    "options": ["true", "false", "undefined", "lanza excepción"],
+    "answer": 1,
+    "explanation": "Precisión binaria: 0.1 + 0.2 es 0.30000000000000004."
+  }
+]
